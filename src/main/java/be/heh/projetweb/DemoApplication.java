@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class DemoApplication {
-
+    //j'en ai marre de git parceque cela ne fonctionne pas
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
 
     @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return String.format("coucou %s!", name);
+        return String.format("coucou %s! ####", name);
     }
 }
